@@ -140,5 +140,11 @@ class DatabaseSeeder extends Seeder
                 'satuan_id' => rand(1, 3),
             ]);
         }
+
+
+        /* ============================
+            Seeder untuk cart item / keranjang
+        ===============================*/
+        $this->call(CartItemSeeder::class);
     }
 }
